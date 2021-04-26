@@ -16,7 +16,7 @@
     <title>Pedro Carvalho</title>
 </head>
 
-<body>
+<body onload="load_graph()">
 
     <div>
         <aside style="background-image: url(profile_big.jpg);">
@@ -67,20 +67,6 @@
             <div>
 
                 <h4 class="text_font">Experience</h2>
-                    <!-- <br />
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Sofware Developer IV
-                            <p> Mundiale
-                                <br />
-                                2020 - In progress </p>
-                        </li>
-                        <li class="list-group-item">Integrated High School with technical course in Electronics <p>
-                                Federal Institute of Education, Science and Technology of Rio Grande do Norte (IFRN)
-                                <br />
-                                2014 - 2017
-                            </p>
-                        </li>
-                    </ul> -->
                     <div class="list-group">
                         <br>
                         <a href="https://www.mundiale.com.br/" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
@@ -109,6 +95,13 @@
                             <p class="mb-1">Connecta Aplicativos Inteligentes</p>
                             <small class="text-muted">Working with REST API development and mobile application development.</small>
                         </a>
+                    </div>
+                    <br>
+                    <div>
+                        <h4 class="text_font">Language</h2>
+                        <p>Based on the last 10 GitHub repositories</p>
+                        <div id="chart_div"></div>
+                        <button type="button" class="btn btn-danger" onclick="xhttpAssincrono(treat_response)">Reload Language Data</button>
                     </div>
             </div>
         </main>
